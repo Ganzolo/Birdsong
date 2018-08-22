@@ -23,7 +23,7 @@ public final class Socket {
     
     fileprivate(set) public var channels: [String: Channel] = [:]
     
-    fileprivate static let HeartbeatInterval = Int64(5 * NSEC_PER_SEC)
+    fileprivate static let HeartbeatInterval = Int64(25 * NSEC_PER_SEC)
     fileprivate static let HeartbeatPrefix = "hb-"
     fileprivate var heartbeatQueue: DispatchQueue
     
